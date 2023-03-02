@@ -1,17 +1,5 @@
 console.clear();
 
-function handleLikeButtonClick(event) {
-  const buttonElement = event.target;
-  buttonElement.classList.toggle("post__button--liked");
-}
-// function handleKlikButtonClick(event) {
-//   const buttonKlikElement = event.target;
-//   buttonKlikElement.classList.toggle("post__button");
-// }
-const likeButton = document.querySelector('[data-js="like-button"]');
-likeButton.addEventListener("click", handleLikeButtonClick);
-// const klikbutton = document.querySelector(".post__button");
-// klikbutton.addEventListener("click", handleKlikButtonClick);
 // Exercise:
 // Use document.createElement() and append another social media post to the body.
 
@@ -38,8 +26,16 @@ span.className = "post__username";
 footer.append(span);
 
 const button = document.createElement("button");
-button.textContent = "KLIK";
+button.textContent = "♥ Like";
 button.className = "post__button";
 button.setAttribute("data-js", "like-button");
 button.type = "button";
 footer.append(button);
+
+function handleLikeButtonClick(event) {
+  const buttonElement = event.target;
+  buttonElement.classList.toggle("post__button--liked");
+}
+
+const likeButton = document.querySelector('[data-js="like-button"]');
+likeButton.addEventListener("click", handleLikeButtonClick);
