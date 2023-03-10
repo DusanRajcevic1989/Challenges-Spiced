@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>HTML Zoo Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section aria-label="contact">
+      <h2 id="form-heading">Zoo Visitor Sign Up</h2>
+      <p id="form-description">
+        Please provide all necessary information on your stay with us.
+      </p>
+
+      <form aria-labelledby="form-heading" aria-describedby="form-description">
+        <fieldset>
+          <legend>Enter your information</legend>
+
+          <!-- Email: label & input -->
+          <label for="Email">E-mail:</label>
+          <input type="email" name="email" id="Email" />
+          <!-- Date: label & input -->
+          <label for="Arrival date">Arrival date:</label>
+          <input type="date" name="Arrival date" id="Arrival date" />
+
+          <fieldset class="radio-options">
+            <legend>Which one of these animals would you like to visit?</legend>
+            <select name="Animals to wisit" id="Special Animals">
+              <option value="">Atractions:</option>
+              <option value="radio-options">Relaxed Sloths</option>
+              <option value="radio-options">Jumpy Kangaroos</option>
+              <option value="radio-options">Thieving Racoons</option>
+            </select>
+            <!-- Radio Buttons: labels & inputs -->
+          </fieldset>
+
+          <!-- Textarea: label & input -->
+          <label for="comment">Any concerns??</label>
+          <textarea type="text" name="comment" id="comment"></textarea>
+          <!-- Two Checkboxes: labels & inputs -->
+          <label for="yes">I would like to sing up!</label>
+          <input type="checkbox" name="yes" id="yes" />
+          <label for="no">Don't sing me up!</label>
+          <input type="checkbox" name="no" id="no" />
+          <!-- Two Buttons: reset & submit -->
+        </fieldset>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
