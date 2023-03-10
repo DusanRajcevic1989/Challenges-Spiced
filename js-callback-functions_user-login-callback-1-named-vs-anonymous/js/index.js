@@ -5,7 +5,14 @@ function handleUserLogin(onSuccess) {
   onSuccess();
 }
 function showWelcomeMessage() {
+ feature/js.callback-functions/user-login-callback-1-named-vs-anonymous
   console.log("Welcome! You are logged in now.");
+  
 }
 // Call handleUserLogin below!
 handleUserLogin(showWelcomeMessage);
+
+handleUserLogin(() => {
+  console.log("Welcome! You are logged in now.");;
+});
+
