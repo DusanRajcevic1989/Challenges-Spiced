@@ -22,7 +22,7 @@ test("divide(a, b) returns divide value of two numbers", () => {
   const div = divide(15, 3);
   expect(div).toBe(5);
 });
-test("divide(a, b) returns divide value of two numbers", () => {
+test("divide(a, b) it returns divide value of two numbers", () => {
   const div = divide(5, 0);
   expect(div).toBe("You should not do this!");
 });
