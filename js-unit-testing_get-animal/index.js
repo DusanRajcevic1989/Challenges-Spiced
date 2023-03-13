@@ -1,8 +1,8 @@
-export function getAnimal(bread) {
-  if (bread === "cats") {
+export function getAnimal(animal) {
+  if (animal === "cats") {
     return "I totally love cats!";
-  } else if (bread === "dogs") {
-    return "I like dogs!";
+  } else if (typeof animal === "string") {
+    return `I like ${animal}!`;
   }
   return "I do not like animals at all!";
 }
