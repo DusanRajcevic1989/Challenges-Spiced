@@ -1,0 +1,7 @@
+.entry_form {
+  display: flex;
+  flex-direction: column;
+}
+.submit {
+  width: fit-content;
+}
