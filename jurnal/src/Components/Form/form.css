@@ -3,5 +3,17 @@
   flex-direction: column;
 }
 .submit {
-  width: fit-content;
+  width: 100px;
+  height: 30px;
+  background-color: #ff4a11;
+  border-radius: 5px;
+  border: #e4e8f0;
+  margin-top: 5px;
+}
+#motto {
+  margin-bottom: 10px;
+  height: 2rem;
+}
+#notes {
+  margin-bottom: 10px;
 }

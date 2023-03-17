@@ -1,6 +1,6 @@
 export default function Entries() {
   return (
-    <div className="entries">
+    <section className="entries">
       <h2 className="date">FEB 26, 2028</h2>
       <h2 className="entries-title">"That's life in the city"</h2>
       <p>
@@ -8,6 +8,6 @@ export default function Entries() {
         mihi.Et quidem se repellerem idque instituit docere sicomne animal,
         simul ateque.
       </p>
-    </div>
+    </section>
   );
 }

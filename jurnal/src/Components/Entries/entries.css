@@ -1,0 +1,10 @@
+.entries {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.date {
+  left: 50%;
+  top: 0;
+}
